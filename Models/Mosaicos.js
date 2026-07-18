@@ -5,7 +5,7 @@ class Mosaico{
         this.a = a 
         this.b = b 
         this.c = c 
-        
+
     }
     
     calcularTriEquilatero(){
