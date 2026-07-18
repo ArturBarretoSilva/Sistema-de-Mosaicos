@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Models/Mosaicos.js"defer></script>
+    <script src="./Models/Parede.js"defer></script>
+    <script src="index.js"defer></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Modelagem</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Sistema de Mosaicos Artisticos</h1><br>
+        
+        <select id="opcoes">
+            <option value="TriEquilatero">Triângulo Equilátero</option>
+            <option value="TriIsoceles">Triângulo Isósceles</option>
+            <option value="TriEscaleno">Triângulo Escaleno</option>
+        </select><br>
+        
+        <h2>Dados do Mosaico</h2>
+        <label for="lado">Digite o valor do lado</label><br>
+        <input type="number" id="lado"><br>
+        <label for="base">Digite o valor da base</label><br>
+        <input type="number" id="base"><br>
+        <label for="ladoA">Digite o valor do primeiro lado</label><br>
+        <input type="number" id="ladoA"><br>
+        <label for="ladoB">Digite o valor do segundo lado</label><br>
+        <input type="number" id="ladoB"><br>
+        <label for="ladoC">Digite o valor do terceiro lado</label><br>
+        <input type="number" id="ladoC"><br><br>
+        <button onclick="principal()"  type="button">Calcular Mosaico</button><br>
+        <div id="respostaM"></div><br><br>
+        
+        <h3>Dados da Parede</h3>
+        <label for="larguraP">Digite a largura da parede</label><br>
+        <input type="number" id="larguraP"><br>
+        <label for="alturaP">Digite a altura da parede</label><br>
+        <input type="number" id="alturaP"><br><br>
+        
+        <button onclick="principal()"  type="button">Calcular</button><br>
+        <div id="respostaP"></div><br><br>
+    </div>
+        
+
+</body>
+</html>

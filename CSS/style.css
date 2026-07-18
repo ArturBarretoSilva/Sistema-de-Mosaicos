@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* .Container: serve pra fazer "uma caixa", assim podendo fazer uma cor diferente do fundo*/
+.container{ 
+    width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 25px;
+}
+
+h2{
+    color: #2563eb;
+    margin: 20px 0 10px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+/* Quando o botão do mouse passa por cima do botão "Calcular", ele faz uma animação */
+button:hover{
+    background: #1d4ed8;
+    transform: scale(1.03);
+}
+/* Caixa de resposta */
+#respostaP{
+    margin-top: 20px;
+    padding: 15px;
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+}
